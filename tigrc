@@ -1,0 +1,16 @@
+# Tigrc
+
+# View settings
+set main-view = \
+	line-number:yes,interval=5 \
+	id:yes \
+	date:default \
+	author:full \
+	commit-title:yes,graph,refs,overflow=no
+
+# UI display settings
+set line-graphics = utf-8
+
+set reference-format = (branch) <tag>
+
+set split-view-width = 60%
