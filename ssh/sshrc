@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# Send login info to slack
+IP=$(echo $SSH_CONNECTION | awk '{print $1}')
+TIME=$(date -u "+%Y-%m-%d %H:%M:%S %Z")
+MESSAGE="$(whoami) just connected  to $(hostname) via $IP at $TIME"
+SLACK_WEBHOOK="YOUR_SLACK_WEBHOOK"
+
+slack_msg() {
+cat <<EOF
+{"text":"$MESSAGE"}
+EOF
+}
+
+slack_msg2() {
+cat <<EOF
+{
+    "attachments": [{
+        "color": "#36a64f",
+        "title": "SSH Login Info",
+        "text": "$MESSAGE",
+        "footer": "MyBot"
+    }]
+}
+EOF
+}
+
+curl -X POST -H 'Content-type: application/json' --data "$(slack_msg2)" $SLACK_WEBHOOK > /dev/null 2>&1
