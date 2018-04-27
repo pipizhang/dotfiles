@@ -1,0 +1,51 @@
+[core]
+    fileMode = false
+    editor = vim
+    excludesfile = ~/.gitignore_global
+    pager = less -x1,5
+[color]
+    status = auto
+    branch = auto
+    interactive = auto
+    diff = auto
+    ui = true
+[user]
+    email = zhh520@gmail.com
+    name = peterzhang
+[push]
+    default = simple
+[alias]
+    ft = fetch
+    st = status
+    co = checkout
+    cl = clone
+    br = branch
+    cm = commit -m
+    df = diff
+    dfo = diff --stat
+    logs = log --stat
+    logg = log --graph
+    logo = log --oneline --decorate
+    log1 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)'
+    loga1 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+    log2 = log --graph --date-order -C -M --pretty=format:'<%h> %ad [%an] %Cgreen%d%Creset %s' --date=short
+    loga2 = log --graph --date-order -C -M --pretty=format:'<%h> %ad [%an] %Cgreen%d%Creset %s' --all --date=short
+    ls = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)'
+    df-last = diff HEAD^1
+    df1 = diff HEAD^1
+    df2 = diff HEAD^2
+    df3 = diff HEAD^3
+    df4 = diff HEAD^4
+    df5 = diff HEAD^5
+    update-branch = remote update origin --prune
+    ft = fetch -p
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    webui = !~/.git-webui/release/libexec/git-core/git-webui
+    w = !~/.git-webui/release/libexec/git-core/git-webui
+[credential]
+    #helper = cache --timeout=3600
+    helper = store
+[http]
+    postBuffer = 524288000
+[webui]
+    autoupdate = true

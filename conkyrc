@@ -1,0 +1,94 @@
+
+-------------------------------------
+--  SIMPLE MANJARO THEME
+-------------------------------------
+
+conky.config = {
+
+-------------------------------------
+--  Generic Settings
+-------------------------------------
+alignment = 'top_right',
+background=true,
+update_interval=1,
+double_buffer=true,
+no_buffers=true,
+imlib_cache_size=10,
+
+draw_shades=false,
+draw_outline=false,
+draw_borders=false,
+
+
+-------------------------------------
+--  Window Specifications
+-------------------------------------
+gap_x = 20,
+gap_y = 20,
+
+minimum_height=390,
+minimum_width=200,
+
+own_window=true,
+own_window_type="normal",
+own_window_transparent=true,
+own_window_hints="undecorated,below,sticky,skip_taskbar,skip_pager",
+
+own_window_argb_visual=true,
+own_window_argb_value=0,
+
+
+-------------------------------------
+--  Text Settings
+-------------------------------------
+use_xft=true,
+xftalpha=1,
+font="Droid Sans:size=10",
+text_buffer_size=256,
+override_utf8_locale=true,
+
+
+-------------------------------------
+--  Color Scheme
+-------------------------------------
+default_color='EFEFEF',
+
+color='EFEFEF', -- clock
+color0='EFEFEF', -- clock
+color1='EFEFEF', -- date
+
+-------------------------------------
+--  Locale (e.g. "es_ES.UTF-8")
+--  Leave empty for default
+-------------------------------------
+template9="es_ES.UTF-8"
+
+}
+
+---------------------------------------------------
+---------------------------------------------------
+
+conky.text = [[
+${font Poiret One:weight=Light:size=12}${color1}\
+${voffset 7}\
+${alignr}${execi 300 LANG=${template9} LC_TIME=${template9} date +"%A, %d de %B"}\
+${font}${color}
+\
+${voffset 20}${color2}CPU ${color0}${alignr}${cpu cpu0}%
+${cpubar cpu0 4,}
+${goto 5}$font$color2${top name 1}$alignr${color 2ECC71}${top cpu 1}%
+${goto 5}${color2}${top name 2}$alignr$color${top cpu 2}%
+${goto 5}${color2}${top name 3}$alignr$color${top cpu 3}%
+${goto 5}${color2}${top name 4}$alignr$color${top cpu 4}%
+\
+${voffset 20}${color}RAM$alignr${color } $memperc%
+${membar 4,}
+${goto 5}${voffset 5}$color2${top_mem name 1}$alignr${color 2ECC71}${top_mem mem_res 1}
+${goto 5}$color2${top_mem name 2}$alignr$color${top_mem mem_res 2}
+${goto 5}$color2${top_mem name 3}$alignr$color${top_mem mem_res 3}
+${goto 5}$color2${top_mem name 4}$alignr$color${top_mem mem_res 4}
+#${voffset 5}${goto 10}$alignr${color}$mem / $memmax
+#${voffset 7}\
+#${voffset 0}${color #98c2c7} U: ${color #db7093}${upspeed wlp4s0}/s ${alignr}${color #98c2c7}T: ${color #db7093}${totalup wlp4s0}
+#${voffset 0}${color #98c2c7} D: ${color #ddaa00}${downspeed wlp4s0}/s ${alignr}${color #98c2c7}T: ${color #ddaa00}${totaldown wlp4s0}
+]]

@@ -1,0 +1,18 @@
+# common
+*.sw?
+nbproject
+npm-debug.log
+.vagrant_back
+
+# caddy
+Caddylocal
+
+# vim tags
+tags
+
+# node
+node_modules
+
+# mvn
+target
+
