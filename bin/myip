@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "# Internal IP"
+echo "{"
+ifconfig | grep broadcast | awk '{$1="  "$1;print}'
+echo "}"
+echo "# Public IP"
+curl ipinfo.io/json
+echo ""
+#http ipinfo.io --body --style=monokai
