@@ -119,6 +119,7 @@ nnoremap <C-H> <C-W><C-H>
 " [ctrlp]
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_by_filename = 1
+let g:ctrlp_custom_ignore = 'node_modules\|\.git'
 
 " [easymotion]
 "key: \w \ge \k
