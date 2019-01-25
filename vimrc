@@ -27,6 +27,7 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'tpope/vim-fugitive'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'cespare/vim-toml'
 "
 " plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'ack.vim'
