@@ -22,7 +22,7 @@ source /usr/local/app/bash-git-prompt/gitprompt.sh
 # Go
 export GOROOT="/usr/local/app/go"
 export GOPATH="/u/dev/gocode"
-export PATH="$PATH:$GOROOT/bin"
+export PATH="$PATH:$GOROOT/bin:$GOPATH/bin"
 
 # Thefuck
 eval $(thefuck --alias)
