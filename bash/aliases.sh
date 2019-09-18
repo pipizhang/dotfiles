@@ -44,4 +44,5 @@ alias wget='wget --user-agent=""'
 alias http='http --style=monokai'
 alias https='http --verify=no'
 alias scurl='curl --socks5 127.0.0.1:1080 '
+alias sshnull='ssh -o "UserKnownHostsFile=/dev/null" -o "StrictHostKeyChecking=no"'
 
