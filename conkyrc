@@ -87,8 +87,8 @@ ${goto 5}${voffset 5}$color2${top_mem name 1}$alignr${color 2ECC71}${top_mem mem
 ${goto 5}$color2${top_mem name 2}$alignr$color${top_mem mem_res 2}
 ${goto 5}$color2${top_mem name 3}$alignr$color${top_mem mem_res 3}
 ${goto 5}$color2${top_mem name 4}$alignr$color${top_mem mem_res 4}
-#${voffset 5}${goto 10}$alignr${color}$mem / $memmax
-#${voffset 7}\
-#${voffset 0}${color #98c2c7} U: ${color #db7093}${upspeed wlp4s0}/s ${alignr}${color #98c2c7}T: ${color #db7093}${totalup wlp4s0}
-#${voffset 0}${color #98c2c7} D: ${color #ddaa00}${downspeed wlp4s0}/s ${alignr}${color #98c2c7}T: ${color #ddaa00}${totaldown wlp4s0}
+${voffset 5}${goto 10}$alignr${color}$mem / $memmax
+${voffset 7}\
+${voffset 0}${color #98c2c7} U: ${color #db7093}${upspeed wlp4s0}/s ${alignr}${color #98c2c7}T: ${color #db7093}${totalup wlp4s0}
+${voffset 0}${color #98c2c7} D: ${color #ddaa00}${downspeed wlp4s0}/s ${alignr}${color #98c2c7}T: ${color #ddaa00}${totaldown wlp4s0}
 ]]
