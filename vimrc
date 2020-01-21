@@ -28,6 +28,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'cespare/vim-toml'
+Plugin 'hashivim/vim-terraform'
 "
 " plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'ack.vim'
@@ -202,3 +203,8 @@ xmap ga <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
 
+" [terraform]
+augroup terraform_ft
+  au!
+  autocmd BufNewFile,BufRead *.hcl   set syntax=terraform
+augroup END
