@@ -112,6 +112,7 @@ nnoremap <F7> :tabprevious<CR>
 nnoremap <F8> :tabnext<CR>
 let g:NERDTreeWinSize = 40
 let NERDTreeMapOpenInTab='\r'
+map <leader>r :NERDTreeFind<CR>
 
 " [swith window easy]
 nnoremap <C-J> <C-W><C-J>
@@ -208,3 +209,8 @@ augroup terraform_ft
   au!
   autocmd BufNewFile,BufRead *.hcl   set syntax=terraform
 augroup END
+
+" [vim-go]
+let g:go_def_mode='gopls'
+let g:go_info_mode='gopls'
+
