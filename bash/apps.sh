@@ -25,9 +25,9 @@ export GOPATH="/u/dev/gocode"
 export PATH="$PATH:$GOROOT/bin:$GOPATH/bin"
 
 # Thefuck
-eval $(thefuck --alias)
+#eval $(thefuck --alias)
 ## You can use whatever you want as an alias, like for Mondays:
-eval $(thefuck --alias FUCK)
+#eval $(thefuck --alias FUCK)
 
 # FZF
 source /usr/share/fzf/key-bindings.bash
