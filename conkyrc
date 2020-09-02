@@ -30,7 +30,7 @@ minimum_height=390,
 minimum_width=200,
 
 own_window=true,
-own_window_type="normal",
+own_window_type="desktop",
 own_window_transparent=true,
 own_window_hints="undecorated,below,sticky,skip_taskbar,skip_pager",
 
