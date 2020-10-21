@@ -4,6 +4,10 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
+# init awesome-terminal-font
+# https://github.com/gabrielelana/awesome-terminal-fonts
+source ~/.fonts/*.sh
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -79,10 +83,13 @@ plugins=(
     git
     golang
     history
-    pipenv
+    #pipenv
     zsh-autosuggestions
     zsh-syntax-highlighting
 )
+
+# Disable
+DISABLE_MAGIC_FUNCTIONS=true
 
 source $ZSH/oh-my-zsh.sh
 
@@ -124,6 +131,11 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(time context dir vcs virtualenv)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 #POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+
+# 字体问题显示空格代替三角
+POWERLEVEL9K_LEFT_SEGMENT_SEPARATOR=''
+POWERLEVEL9K_LEFT_SUBSEGMENT_SEPARATOR=' '
+POWERLEVEL9K_WHITESPACE_BETWEEN_LEFT_SEGMENTS=' '
 
 
 # zsh-autosuggestions

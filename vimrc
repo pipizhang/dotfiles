@@ -59,6 +59,9 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 "Plugin 'user/L9', {'name': 'newL9'}
 Plugin 'leafgarland/typescript-vim'
 
+" Use release branch (Recommend)
+"Plugin 'neoclide/coc.nvim', {'branch': 'release'}
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -213,4 +216,7 @@ augroup END
 " [vim-go]
 let g:go_def_mode='gopls'
 let g:go_info_mode='gopls'
+
+" Jenkins
+au BufNewFile,BufRead Jenkinsfile setf groovy
 

@@ -24,6 +24,9 @@ export GOROOT="/usr/local/app/go"
 export GOPATH="/u/dev/gocode"
 export PATH="$PATH:$GOROOT/bin:$GOPATH/bin"
 
+# Node
+export PATH="$PATH:/usr/local/app/node/bin"
+
 # Thefuck
 #eval $(thefuck --alias)
 ## You can use whatever you want as an alias, like for Mondays:
