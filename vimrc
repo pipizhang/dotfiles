@@ -116,6 +116,7 @@ nnoremap <F8> :tabnext<CR>
 let g:NERDTreeWinSize = 40
 let NERDTreeMapOpenInTab='\r'
 map <leader>r :NERDTreeFind<CR>
+let NERDTreeIgnore = ['\.pyc$', '__pycache__']
 
 " [swith window easy]
 nnoremap <C-J> <C-W><C-J>
