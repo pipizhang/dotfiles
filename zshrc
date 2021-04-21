@@ -86,6 +86,7 @@ plugins=(
     #pipenv
     zsh-autosuggestions
     zsh-syntax-highlighting
+    aws
 )
 
 # Disable
@@ -126,7 +127,7 @@ source /usr/local/app/dotfiles/zsh/apps.sh
 # theme powerlevel9k
 DEFAULT_USER="peter"
 POWERLEVEL9K_TIME_FORMAT='%D{%H:%M}'
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(time context dir vcs virtualenv)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(time context dir vcs virtualenv aws)
 #POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs time)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
@@ -173,3 +174,8 @@ ZSH_HIGHLIGHT_STYLES[path_prefix]=none
 # env
 export EDITOR=vim
 export TERM="xterm-256color"
+
+# kubectl
+source <(kubectl completion zsh)
+
+
