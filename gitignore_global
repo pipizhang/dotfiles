@@ -16,3 +16,18 @@ node_modules
 # mvn
 target
 
+# netbeans
+nb-configuration.xml
+nbactions.xml
+
+# ij
+.idea
+
+# platuml
+*.puml
+
+# special
+PeterTest.java
+
+# vscode
+.vscode

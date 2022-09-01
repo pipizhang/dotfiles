@@ -11,7 +11,7 @@
     ui = true
 [user]
     email = zhh520@gmail.com
-    name = peterzhang
+    name = Peter Zhang
 [push]
     default = simple
 [alias]
@@ -49,3 +49,7 @@
     postBuffer = 524288000
 [webui]
     autoupdate = true
+[pull]
+    rebase = false
+[pager]
+    branch = false
