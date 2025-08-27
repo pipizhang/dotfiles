@@ -42,7 +42,7 @@ Plugin 'The-NERD-Commenter'
 Plugin 'nerdtree-ack'
 Plugin 'Puppet-Syntax-Highlighting'
 Plugin 'vim-stylus'
-Plugin 'surround.vim'
+Plugin 'surround.vim' "https://blog.csdn.net/weixin_39815031/article/details/111128864
 Plugin 'ZoomWin'
 "
 " Git plugin not hosted on GitHub
@@ -64,6 +64,10 @@ Plugin 'leafgarland/typescript-vim'
 
 " PHP
 Plugin 'shawncplus/phpcomplete.vim'
+" Dart
+Plugin 'dart-lang/dart-vim-plugin'
+" Rust
+Plugin 'rust-lang/rust.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

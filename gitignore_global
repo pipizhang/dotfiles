@@ -31,3 +31,6 @@ PeterTest.java
 
 # vscode
 .vscode
+
+# local test
+/peter_test

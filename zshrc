@@ -86,7 +86,7 @@ plugins=(
     #pipenv
     zsh-autosuggestions
     zsh-syntax-highlighting
-    aws
+    #aws
 )
 
 # Disable
@@ -176,6 +176,5 @@ export EDITOR=vim
 export TERM="xterm-256color"
 
 # kubectl
-source <(kubectl completion zsh)
-
+#source <(kubectl completion zsh)
 

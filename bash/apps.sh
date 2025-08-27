@@ -25,7 +25,7 @@ export GOPATH="/u/dev/gocode"
 export PATH="$PATH:$GOROOT/bin:$GOPATH/bin"
 
 # Node
-export PATH="$PATH:/usr/local/app/node/bin"
+#export PATH="$PATH:/usr/local/app/node/bin"
 
 # Thefuck
 #eval $(thefuck --alias)
