@@ -4,14 +4,14 @@ export GOPATH="/u/dev/gocode"
 export PATH="$PATH:$GOROOT/bin:$GOPATH/bin"
 
 # Node
-export PATH="$PATH:/usr/local/app/node/bin"
+#export PATH="$PATH:/usr/local/app/node/bin"
 
 # Flut
 #export PATH="$PATH:/usr/local/app/flutter/bin"
 
 # FZF
-source /usr/share/fzf/key-bindings.zsh
-source /usr/share/fzf/completion.zsh
+source /usr/share/doc/fzf/examples/key-bindings.zsh
+source /usr/share/doc/fzf/examples/completion.zsh
 
 # Java
 JAVA_HOME="/usr/local/app/java/jdk-18"

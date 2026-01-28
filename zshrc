@@ -178,3 +178,16 @@ export TERM="xterm-256color"
 # kubectl
 #source <(kubectl completion zsh)
 
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# docker alias to backward compatible
+alias docker-compose="docker compose"
+
+# check if local bin env file exists (for msp)
+[ -f "$HOME/.local/bin/env" ] && source "$HOME/.local/bin/env"
+
+# check if local zshrc file exists
+[ -f "$HOME/.zshrc.local" ] && source "$HOME/.zshrc.local"

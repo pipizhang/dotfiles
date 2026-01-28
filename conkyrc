@@ -89,6 +89,6 @@ ${goto 5}$color2${top_mem name 3}$alignr$color${top_mem mem_res 3}
 ${goto 5}$color2${top_mem name 4}$alignr$color${top_mem mem_res 4}
 ${voffset 5}${goto 10}$alignr${color}$mem / $memmax
 ${voffset 7}\
-${voffset 0}${color2} U ${color #ffff33}${upspeed wlp61s0}/s ${alignr}${color2}T ${totalup wlp61s0}
-${voffset 0}${color2} D ${color #2ecc71}${downspeed wlp61s0}/s ${alignr}${color2}T ${totaldown wlp61s0}
+${voffset 0}${color2} U ${color #ffff33}${upspeed wlp86s0f0}/s ${alignr}${color2}T ${totalup wlp86s0f0}
+${voffset 0}${color2} D ${color #2ecc71}${downspeed wlp86s0f0}/s ${alignr}${color2}T ${totaldown wlp86s0f0}
 ]]
